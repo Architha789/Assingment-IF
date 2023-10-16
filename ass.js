@@ -16,21 +16,22 @@ function my_function(){
     }
 
 function my_function1(){
-    angle=parseInt(document.getElementById('num4').value);
-    switch (true){
-        case (angle == 90):
-            triangle="Right-Angled triangle";
-        break;
-          case (angle > 90):
-            triangle="Obtuse-Angled triangle";
-        break;
-        default:
-            triangle="Acute-Angled triangle";
-        break;
+    a=parseInt(document.getElementById('num4').value);
+    b=parseInt(document.getElementById('num10').value);
+    c=parseInt(document.getElementById('num11').value);
+     if(a**2 + b**2 == c**2){
+     result="The triangle is a right angled triangle";
+     }
+    else{
+        result="The triangle is not Right-Angled";
     }
-    document.getElementById("p2").innerHTML=triangle;
+    
+    
+    document.getElementById("p2").innerHTML=result;
+}
 
-}  
+  
+
 
 function my_function2(){
     number=parseInt(document.getElementById('num5').value);
@@ -95,3 +96,4 @@ document.getElementById("p1").style.color="red";
 document.getElementById("p2").style.color="red";
 document.getElementById("p3").style.color="red";
 document.getElementById("p4").style.color="red";
+document.getElementById("p5").style.color="red";
