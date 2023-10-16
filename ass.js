@@ -70,7 +70,7 @@ function my_function4(){
     b=parseInt(document.getElementById('num8').value);
     c=(document.getElementById('num9').value);
 
-    switch (operation){
+    switch (c){
         case "+":
             result=a+b;
         break;
